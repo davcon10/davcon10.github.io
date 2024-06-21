@@ -6,43 +6,107 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>Contreras David: 225</title>
+  <link rel="icon" type="image" href="images/david%20favicon.jpg">
   <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
   <!-- Bootstrap core CSS -->
   <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <style>
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 100px;
+    }
 
-  <head>
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
-    </head>
+    .box1 {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      background-color: #2596be;
+    }
+
+    .box2 {
+      grid-column-start: 1;
+      grid-row-start: 3;
+      grid-row-end: 6;
+      background-color: #eab676;
+    }
+
+    .box3 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 5;
+      background-color: #bcb8b6;
+    }
+
+    .box4 {
+      grid-row-start: 5;
+      grid-column-start: 2;
+      background-color: #154c79;
+    }
+
+    .box5 {
+      grid-row-start: 5;
+      grid-column-start: 3;
+      background-color: #873e23;
+    }
+
+    .box6 {
+      grid-row-start: 6;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      background-color: #195e83;
+    }
+    footer {
+  background-color: #003049;
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.email-sign-up {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 425px;
+}
+
+
+  </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#">David Contreras</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="carousel.html">Carousel</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="grid.html">Grid</a>
-  </li>
-    <li class="nav-item">
-      <a class="nav-link" href="about.html">About</a>
-  </li>
-    </ul>
-  </div>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">David Contreras</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="grid.html"> Grid</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="carousel.html">Carousel</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+              </li>
+          </ul>
+      </div>
 </nav>
-
+ </body>
 <main role="main" class="container-fluid">
-
   <h2>Practicing with CSS Grid</h2>
   <div class="wrapper">
     <div class="box1">One</div>
@@ -51,59 +115,21 @@
     <div class="box4">Four</div>
     <div class="box5">Five</div>
     <div class="box6">Six</div>
-  </div>
 
+</div>
+<br>
 
-  .wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 100px;
-}
+<!--My Footer-->
+<footer>
+    <p>&#0153 David Conteras</p>
+    <section class="email-sign-up">
+      <p>Newsletter: </p>
+      <input type="text" placeholder="Your Email"/>
+      <button id="sign-up">Sign Up</button>
+      </section>
+    </footer>
 
-.box1 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    background-color: #2596be;
-}
-
-.box2 {
-    grid-column-start: 1;
-    grid-row-start: 3;
-    grid-row-end: 6;
-    background-color: #eab676;
-}
-
-.box3 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 5;
-   background-color: #bcb8b6;
-}
-
-.box4 {
-    grid-row-start: 5;
-    grid-column-start: 2;
-    background-color: #154c79;
-}
-
-.box5 {
-    grid-row-start: 5;
-    grid-column-start: 3;
-    background-color: #873e23;
-}
-
-.box6 {
-    grid-row-start: 6;
-    grid-column-start: 1;
-    grid-column-end: 4; 
-    background-color: #195e83;
-}
-
-
-</main><!-- /.container -->
+</div>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
@@ -113,3 +139,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+</main><!-- /.container -->
